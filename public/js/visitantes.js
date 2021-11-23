@@ -1,3 +1,4 @@
+/*Formulario de registro de visitantes*/ 
 const visitFormButton = document.getElementById('visitFormButton');
 const visitantesForm = document.getElementById('visitantesForm');
 var hora = new Date();
@@ -12,10 +13,12 @@ function emptyFields(nombre, docId, destino) {
 	}
 	else {
 		console.log(hora.getHours());
-		db.ref('visitantes/' + destinoFcn).set({
+		db.ref('visitantes/' + destinoFcn + "/" + docIdFcn).set({
 			nombre: nombreFcn,
-			docId: docIdFcn,
-			hora: String(hora.getHours())
+			day: String(hora.getDate()),
+			month: String(hora.getMonth()),
+			year: String(hora.getFullYear()),
+			hour: String(hora.getHours())
 		});
 		document.getElementById('exitoVisitante').innerHTML = '<p class="lead text-success">Visita registrada exitosamente.</p>';
 		visitantesForm.reset();

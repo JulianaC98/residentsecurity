@@ -38,6 +38,8 @@
             </div>
             <div class="row gx-5 justify-content-center">
                 <div class="col-lg-5">
+                    <div class="emptyFields" id="emptyFields"></div>
+                    <div class="nonUser" id="nonUser"></div>
                     <form id="residentesForm" name="residentesForm">
                         <div class="form-floating mb-3">
                             <input class="form-control" id="usuario" name="usuario" type="text" placeholder="ingrese su usuario..." />
@@ -59,8 +61,6 @@
                             <label for="casa">casa</label>
                         </div>
                         <div class="d-grid"><button class="btn btn-primary btn-lg" id="resiFormButton" name="resiFormButton" type="submit">Ingresar</button></div>
-                        <div class="emptyFields" id="emptyFields"></div>
-                        <div class="nonUser" id="nonUser"></div>
                     </form>
                 </div>
             </div>
@@ -79,6 +79,6 @@
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
     <script src="js/dbConfig.js"></script>
-    <script src="js/residentes.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>

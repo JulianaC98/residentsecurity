@@ -1,19 +1,25 @@
+import { initializeApp } from 'firebase/app';
+import { getDatabase } from "firebase/database";
+
 const firebaseConfig = {
-    apiKey: "AIzaSyCNIxjGRDU73wVTfPSZYZg3TMCq47TBpdo",
 
-    authDomain: "test4-e0a6e.firebaseapp.com",
+    apiKey: "AIzaSyDfcI-msQyaezXdlWtkr_WQDMjQTyPXiMw",
 
-    databaseURL: "https://test4-e0a6e-default-rtdb.firebaseio.com",
+    authDomain: "residentsecurity-5f4ec.firebaseapp.com",
 
-    projectId: "test4-e0a6e",
+    databaseURL: "https://residentsecurity-5f4ec-default-rtdb.firebaseio.com",
 
-    storageBucket: "test4-e0a6e.appspot.com",
+    projectId: "residentsecurity-5f4ec",
 
-    messagingSenderId: "837040724351",
+    storageBucket: "residentsecurity-5f4ec.appspot.com",
 
-    appId: "1:837040724351:web:5d4ab2cf0b25798591224a"
+    messagingSenderId: "1060748774683",
+
+    appId: "1:1060748774683:web:f02f4bf9848570ed9897be"
 
 };
+
+
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.database(app);
